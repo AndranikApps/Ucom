@@ -92,15 +92,15 @@ namespace UcomGridView.Data.Migrations
             migrationBuilder.Sql("INSERT INTO Statuses (Name) VALUES ('Active'), ('Inactive')");
 
             // Need MS SQL server 2022
-            migrationBuilder.Sql("INSERT INTO [dbo].[Users] (Firstname, Lastname, Age, Email, CreatedAt, UpdatedAt, StatusId) " +
-                "SELECT CONCAT('Firstname', value), " +
-                "CONCAT('Lastname', value), " +
-                "value, " +
-                "CONCAT(CONCAT('email', value), '@gmail.com'), " +
-                "GETDATE(), " +
-                "GETDATE(), " +
-                "(value % 2) + 1 " +
-                "FROM GENERATE_SERIES(1, 1000, 1)");
+            //migrationBuilder.Sql("INSERT INTO [dbo].[Users] (Firstname, Lastname, Age, Email, CreatedAt, UpdatedAt, StatusId) " +
+            //    "SELECT CONCAT('Firstname', value), " +
+            //    "CONCAT('Lastname', value), " +
+            //    "value, " +
+            //    "CONCAT(CONCAT('email', value), '@gmail.com'), " +
+            //    "GETDATE(), " +
+            //    "GETDATE(), " +
+            //    "(value % 2) + 1 " +
+            //    "FROM GENERATE_SERIES(1, 1000, 1)");
         }
 
         /// <inheritdoc />
