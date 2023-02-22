@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Users";
+}
+
+<div class="table-frame">
+    <table id="grid" class="table table-striped">
+        <thead>
+            <tr>
+                <th>Firstname <i class="fas fa-sort" id="sort-firstname"></i><div><input class="form-control" type="text" id="firstname" /></div></th>
+                <th>Lastname <i class="fas fa-sort" id="sort-lastname"></i><div><input class="form-control" type="text" id="lastname" /></div></th>
+                <th>Age <i class="fas fa-sort" id="sort-age"></i><div><input class="form-control" type="number" id="age" /></div></th>
+                <th>Email <i class="fas fa-sort" id="sort-email"></i><div><input class="form-control" type="email" id="email" /></div></th>
+                <th>Created at <i class="fas fa-sort" id="sort-createdAt"></i><div><input class="form-control" type="datetime" id="createdAt" /></div></th>
+                <th>Updated at <i class="fas fa-sort" id="sort-updatedAt"></i><div><input class="form-control" type="datetime" id="updatedAt" /></div></th>
+                <th>
+                    Is deleted<div>
+                        <select class="select" id="isDeleted">
+                            <option value="">Select</option>
+                            <option value="1">true</option>
+                            <option value="0">false</option>
+                        </select>
+                    </div>
+                </th>
+                <th style="width: 150px;">Avatar</th>
+                <th>
+                    Status<div>
+                        <select class="select" id="status">
+                    <option value="0">Select</option>
+                    <option value="1">Active</option>
+                    <option value="2">Inactive</option>
+                </select></div></th>
+                <th style="min-width: 100px;"></th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+</div>
+<div class="paging">
+    <button id="prev">&lt;&lt;</button>
+    Page <input class="page form-control form-control-sm" type="text" id="page" value="1" /> of
+    <button id="next">&gt;&gt;</button>
+    <select class="select take" id="take">
+        <option value="10">10</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+    </select>
+</div>
