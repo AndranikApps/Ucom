@@ -122,7 +122,7 @@ function closeEdit(ctx, avatar) {
     childs[4].innerHTML = childs[4].childNodes[0].value;
     childs[5].innerHTML = childs[5].childNodes[0].value;
     childs[6].innerHTML = !!childs[6].childNodes[0].value;
-    childs[7].innerHTML = '<img class="avatar" src="' + (avatar != 'undefined'
+    childs[7].innerHTML = '<img class="avatar" src="' + (avatar != undefined
         ? avatar
         : (childs[7].childNodes[0].getAttribute("base64attr") != null &&
             childs[7].childNodes[0].getAttribute("base64attr").indexOf("data") == 0
