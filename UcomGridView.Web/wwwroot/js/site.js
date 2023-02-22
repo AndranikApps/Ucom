@@ -67,7 +67,7 @@ function edit(ctx) {
     childs[3].innerHTML = '<input class="form-control" id="email" type="text" value="' + childs[3].innerText + '" />';
     childs[4].innerHTML = '<input class="form-control" id="createdAt" type="text" value="' + childs[4].innerText + '" />';
     childs[5].innerHTML = '<input class="form-control" id="updatedAt" type="text" value="' + childs[5].innerText + '" />';
-    childs[6].innerHTML = '<input id="isDeleted" type="checkbox" value="' + childs[6].innerText + '" />';
+    childs[6].innerHTML = '<input id="isDeleted" type="checkbox" ' + (childs[6].innerText == true ? 'checked' : '') + '" />';
     childs[7].innerHTML = '<input class="file-input" id="avatar" type="file" base64attr="' + childs[7].childNodes[0].src + '" />';
     childs[8].innerHTML = '<select id="status">' +
         '<option value="1" ' + (statusId == 1 ? 'selected' : '') + '>Active</option>' +
