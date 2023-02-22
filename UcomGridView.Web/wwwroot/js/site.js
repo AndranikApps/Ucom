@@ -90,7 +90,7 @@ function save(ctx) {
     formData.append("email", childs[3].childNodes[0].value);
     formData.append("createdAt", childs[4].childNodes[0].value);
     formData.append("updatedAt", childs[5].childNodes[0].value);
-    formData.append("isDeleted", !!childs[6].childNodes[0].value);
+    formData.append("isDeleted", childs[6].childNodes[0].checked);
     formData.append("avatar", childs[7].childNodes[0].files[0]);
     formData.append("statusId", childs[8].childNodes[0].value);
 
